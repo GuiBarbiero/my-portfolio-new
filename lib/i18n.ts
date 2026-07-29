@@ -129,6 +129,7 @@ export const translations: Record<Language, Dictionary> = {
             'PostgreSQL',
             'Prisma',
             'REST APIs',
+            'Microsoft Graph API',
           ],
         },
         {
@@ -142,6 +143,10 @@ export const translations: Record<Language, Dictionary> = {
             'Git',
             'CI/CD',
           ],
+        },
+        {
+          category: 'IA & Automação',
+          items: ['IA & LLMs', 'n8n', 'Power Automate', 'Power BI', 'VBA'],
         },
         {
           category: 'Design & Outros',
@@ -305,6 +310,7 @@ export const translations: Record<Language, Dictionary> = {
             'PostgreSQL',
             'Prisma',
             'REST APIs',
+            'Microsoft Graph API',
           ],
         },
         {
@@ -318,6 +324,10 @@ export const translations: Record<Language, Dictionary> = {
             'Git',
             'CI/CD',
           ],
+        },
+        {
+          category: 'AI & Automation',
+          items: ['AI & LLMs', 'n8n', 'Power Automate', 'Power BI', 'VBA'],
         },
         {
           category: 'Design & More',
