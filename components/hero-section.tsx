@@ -7,6 +7,8 @@ import {
   LinkedinIcon,
 } from '@/components/brand-icons'
 import { useLanguage } from '@/components/language-provider'
+import DecryptedText from '@/components/reactbits/DecryptedText'
+import Particles from '@/components/reactbits/Particles'
 
 export function HeroSection() {
   const { t } = useLanguage()
@@ -31,6 +33,18 @@ export function HeroSection() {
         aria-hidden="true"
         className="pointer-events-none absolute -right-40 top-1/4 h-96 w-96 rounded-full bg-primary/10 blur-3xl"
       />
+      {/* animated particles */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+        <Particles
+          className="size-full"
+          particleColors={['#8b5cf6', '#a78bfa', '#e9d5ff']}
+          particleCount={160}
+          particleSpread={12}
+          speed={0.06}
+          particleBaseSize={70}
+          alphaParticles
+        />
+      </div>
 
       <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6">
         <div className="max-w-3xl">
@@ -47,7 +61,17 @@ export function HeroSection() {
           <p className="mb-4 font-mono text-sm text-primary">{t.hero.role}</p>
 
           <h1 className="text-balance text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-            {t.hero.headlineLead}
+            <DecryptedText
+              key={t.hero.headlineLead}
+              text={t.hero.headlineLead}
+              animateOn="view"
+              sequential
+              speed={38}
+              maxIterations={14}
+              revealDirection="start"
+              className="text-foreground"
+              encryptedClassName="text-primary/50"
+            />
           </h1>
 
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">

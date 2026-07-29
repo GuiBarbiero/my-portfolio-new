@@ -4,6 +4,7 @@ import { ArrowUpRight } from 'lucide-react'
 import { GithubIcon } from '@/components/brand-icons'
 import { useLanguage } from '@/components/language-provider'
 import { SectionHeading } from '@/components/section-heading'
+import SpotlightCard from '@/components/reactbits/SpotlightCard'
 
 export function ProjectsSection() {
   const { t } = useLanguage()
@@ -22,9 +23,10 @@ export function ProjectsSection() {
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {t.projects.items.map((project) => (
-            <article
+            <SpotlightCard
               key={project.title}
-              className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-colors hover:border-primary/40"
+              spotlightColor="rgba(139, 92, 246, 0.15)"
+              className="group flex flex-col rounded-xl border-border bg-card p-0 transition-colors hover:border-primary/40"
             >
               <div className="relative aspect-[16/10] overflow-hidden border-b border-border">
                 <img
@@ -70,7 +72,7 @@ export function ProjectsSection() {
                   </a>
                 </div>
               </div>
-            </article>
+            </SpotlightCard>
           ))}
         </div>
       </div>
