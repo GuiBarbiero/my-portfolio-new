@@ -2,6 +2,7 @@
 
 import { useLanguage } from '@/components/language-provider'
 import { SectionHeading } from '@/components/section-heading'
+import SpotlightCard from '@/components/reactbits/SpotlightCard'
 
 export function SkillsSection() {
   const { t } = useLanguage()
@@ -17,11 +18,12 @@ export function SkillsSection() {
         subtitle={t.skills.subtitle}
       />
 
-      <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-12 flex flex-wrap justify-center gap-4">
         {t.skills.groups.map((group) => (
-          <div
+          <SpotlightCard
             key={group.category}
-            className="rounded-xl border border-border bg-card p-6"
+            spotlightColor="rgba(74, 222, 128, 0.12)"
+            className="w-full rounded-xl border-border bg-card p-6 sm:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)]"
           >
             <h3 className="font-mono text-sm uppercase tracking-widest text-primary">
               {group.category}
@@ -37,7 +39,7 @@ export function SkillsSection() {
                 </li>
               ))}
             </ul>
-          </div>
+          </SpotlightCard>
         ))}
       </div>
     </section>

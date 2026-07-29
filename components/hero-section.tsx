@@ -9,6 +9,7 @@ import {
 import { useLanguage } from '@/components/language-provider'
 import DecryptedText from '@/components/reactbits/DecryptedText'
 import Particles from '@/components/reactbits/Particles'
+import ShinyText from '@/components/reactbits/ShinyText'
 
 export function HeroSection() {
   const { t } = useLanguage()
@@ -37,7 +38,7 @@ export function HeroSection() {
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
         <Particles
           className="size-full"
-          particleColors={['#8b5cf6', '#a78bfa', '#e9d5ff']}
+          particleColors={['#4ade80', '#22c55e', '#86efac']}
           particleCount={160}
           particleSpread={12}
           speed={0.06}
@@ -53,9 +54,11 @@ export function HeroSection() {
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex size-2 rounded-full bg-primary" />
             </span>
-            <span className="font-mono text-xs text-muted-foreground">
-              {t.hero.availability}
-            </span>
+            <ShinyText
+              text={t.hero.availability}
+              speed={4}
+              className="font-mono text-xs"
+            />
           </div>
 
           <p className="mb-4 font-mono text-sm text-primary">{t.hero.role}</p>

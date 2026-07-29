@@ -56,6 +56,8 @@ type Dictionary = {
     subtitle: string
     live: string
     code: string
+    photoNotice: string
+    photoNoticeCta: string
     items: Project[]
   }
   experience: {
@@ -105,9 +107,9 @@ export const translations: Record<Language, Dictionary> = {
         'Trabalho no dia a dia com o ecossistema JavaScript/TypeScript, sempre buscando escrever código sustentável, testável e performático. Acredito que os melhores produtos nascem da combinação entre boa engenharia e empatia com quem usa.',
       ],
       stats: [
-        { value: '5+', label: 'Anos de experiência' },
-        { value: '40+', label: 'Projetos entregues' },
-        { value: '15+', label: 'Clientes atendidos' },
+        { value: '4+', label: 'Anos de experiência' },
+        { value: '7+', label: 'Projetos entregues' },
+        { value: '3', label: 'Clientes atendidos' },
       ],
     },
     skills: {
@@ -161,6 +163,9 @@ export const translations: Record<Language, Dictionary> = {
         'Uma seleção de projetos que representam o tipo de trabalho que gosto de fazer.',
       live: 'Ver online',
       code: 'Código',
+      photoNotice:
+        'Por questões contratuais não posso adicionar mais fotos dos projetos, mas caso queira saber mais, me envie um e-mail.',
+      photoNoticeCta: 'Enviar e-mail',
       items: [
         {
           title: 'ERP Champs Law',
@@ -286,9 +291,9 @@ export const translations: Record<Language, Dictionary> = {
         'I work daily with the JavaScript/TypeScript ecosystem, always aiming to write sustainable, testable and performant code. I believe the best products come from combining solid engineering with empathy for the people who use them.',
       ],
       stats: [
-        { value: '5+', label: 'Years of experience' },
-        { value: '40+', label: 'Projects delivered' },
-        { value: '15+', label: 'Clients served' },
+        { value: '4+', label: 'Years of experience' },
+        { value: '7+', label: 'Projects delivered' },
+        { value: '3', label: 'Clients served' },
       ],
     },
     skills: {
@@ -342,6 +347,9 @@ export const translations: Record<Language, Dictionary> = {
         'A selection of projects that represent the kind of work I love to do.',
       live: 'Live site',
       code: 'Code',
+      photoNotice:
+        "For contractual reasons I can't share more project photos, but if you'd like to know more, send me an email.",
+      photoNoticeCta: 'Send email',
       items: [
         {
           title: 'Champs Law ERP',

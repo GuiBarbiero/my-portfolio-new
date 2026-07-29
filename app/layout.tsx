@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { LanguageProvider } from '@/components/language-provider'
+import ClickSpark from '@/components/reactbits/ClickSpark'
 import './globals.css'
 
 const geistSans = Geist({
@@ -52,7 +53,15 @@ export default function RootLayout({
       className={`dark bg-background ${geistSans.variable} ${geistMono.variable}`}
     >
       <body className="font-sans antialiased">
-        <LanguageProvider>{children}</LanguageProvider>
+        <ClickSpark
+          sparkColor="#4ade80"
+          sparkSize={9}
+          sparkRadius={16}
+          sparkCount={8}
+          duration={500}
+        >
+          <LanguageProvider>{children}</LanguageProvider>
+        </ClickSpark>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

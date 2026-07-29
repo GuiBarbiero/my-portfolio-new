@@ -2,6 +2,7 @@
 
 import { useLanguage } from '@/components/language-provider'
 import { SectionHeading } from '@/components/section-heading'
+import CountUp from '@/components/reactbits/CountUp'
 
 export function AboutSection() {
   const { t } = useLanguage()
@@ -26,19 +27,30 @@ export function AboutSection() {
         </div>
 
         <div className="grid grid-cols-3 gap-4 lg:grid-cols-1">
-          {t.about.stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="rounded-lg border border-border bg-card p-5"
-            >
-              <div className="font-mono text-3xl font-semibold text-primary">
-                {stat.value}
+          {t.about.stats.map((stat) => {
+            const target = parseInt(stat.value, 10)
+            const suffix = stat.value.replace(/[0-9]/g, '')
+            return (
+              <div
+                key={stat.label}
+                className="rounded-lg border border-border bg-card p-5"
+              >
+                <div className="font-mono text-3xl font-semibold text-primary">
+                  {Number.isNaN(target) ? (
+                    stat.value
+                  ) : (
+                    <>
+                      <CountUp to={target} duration={2} />
+                      {suffix}
+                    </>
+                  )}
+                </div>
+                <div className="mt-1 text-sm text-muted-foreground">
+                  {stat.label}
+                </div>
               </div>
-              <div className="mt-1 text-sm text-muted-foreground">
-                {stat.label}
-              </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>
