@@ -122,11 +122,26 @@ export const translations: Record<Language, Dictionary> = {
         },
         {
           category: 'Backend',
-          items: ['Node.js', 'PostgreSQL', 'Prisma', 'GraphQL', 'Redis'],
+          items: [
+            'Node.js',
+            'Oracle Database',
+            'Supabase',
+            'PostgreSQL',
+            'Prisma',
+            'REST APIs',
+          ],
         },
         {
           category: 'DevOps & Ferramentas',
-          items: ['Docker', 'AWS', 'Vercel', 'Git', 'CI/CD'],
+          items: [
+            'Docker',
+            'AWS',
+            'Cloudflare R2',
+            'Render',
+            'Vercel',
+            'Git',
+            'CI/CD',
+          ],
         },
         {
           category: 'Design & Outros',
@@ -283,11 +298,26 @@ export const translations: Record<Language, Dictionary> = {
         },
         {
           category: 'Backend',
-          items: ['Node.js', 'PostgreSQL', 'Prisma', 'GraphQL', 'Redis'],
+          items: [
+            'Node.js',
+            'Oracle Database',
+            'Supabase',
+            'PostgreSQL',
+            'Prisma',
+            'REST APIs',
+          ],
         },
         {
           category: 'DevOps & Tools',
-          items: ['Docker', 'AWS', 'Vercel', 'Git', 'CI/CD'],
+          items: [
+            'Docker',
+            'AWS',
+            'Cloudflare R2',
+            'Render',
+            'Vercel',
+            'Git',
+            'CI/CD',
+          ],
         },
         {
           category: 'Design & More',
