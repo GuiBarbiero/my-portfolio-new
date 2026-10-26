@@ -177,6 +177,42 @@ export const translations: Record<Language, Dictionary> = {
           repoUrl: 'https://github.com/GuiBarbiero',
         },
         {
+          title: 'Due Diligence — Champs Law',
+          description:
+            'Sistema interno para controle de documentos enviados pelo cliente em processos de Due Diligence. A plataforma centraliza o DVR, organiza os arquivos por pendência, acompanha o status de revisão e facilita a análise documental de forma segura e padronizada.',
+          tags: ['Next.js', 'TypeScript', 'Due Diligence', 'Documentos'],
+          image: '/projects/DueDilligence.png',
+          liveUrl: '#',
+          repoUrl: 'https://github.com/GuiBarbiero',
+        },
+        {
+          title: 'DealFlow',
+          description:
+            'Hub para empresas que desejam comprar ou vender negócios em diferentes setores. A plataforma conecta empresas interessadas em M&A, centraliza oportunidades, facilita a análise de fit e ajuda a organizar o processo de negociação e relacionamento entre as partes.',
+          tags: ['TypeScript', 'Supabase', 'Cloudflare', 'Cloudflare R2', 'M&A'],
+          image: '/projects/Dealflow.png',
+          liveUrl: '#',
+          repoUrl: 'https://github.com/GuiBarbiero',
+        },
+        {
+          title: 'MyPAI',
+          description:
+            'Sistema responsável pela formulação e atualização de contratos sociais com suporte de IA, incluindo validação jurídica no Brasil. A solução ajuda a reduzir erros, acelerar a geração de documentos e tornar o processo mais confiável para negócios e sociedades.',
+          tags: ['TypeScript', 'IA', 'Supabase', 'Cloudflare', 'Jurídico'],
+          image: '/projects/MypAi.png',
+          liveUrl: '#',
+          repoUrl: 'https://github.com/GuiBarbiero',
+        },
+        {
+          title: 'MyPAI Website',
+          description:
+            'Website institucional e comercial do produto MyPAI, pensado para apresentar o valor da solução, comunicar o diferencial de IA aplicada ao direito societário e converter leads com uma proposta clara para empresas e profissionais que precisam validar e atualizar documentos jurídicos.',
+          tags: ['Next.js', 'TypeScript', 'Marketing', 'Landing Page', 'AI'],
+          image: '/projects/MypAiWebsite.png',
+          liveUrl: '#',
+          repoUrl: 'https://github.com/GuiBarbiero',
+        },
+        {
           title: 'Controle de Clientes',
           description:
             'Plataforma web para controle de clientes ativos e inativos, análise de áreas em destaque e envio de mensagens para manter a base ativa ou reconquistar clientes.',
@@ -357,6 +393,42 @@ export const translations: Record<Language, Dictionary> = {
             'Full ERP system with financial control (accounts payable and receivable, cash flow), automatic invoice issuing directly with the city hall, commission control and margin analysis per area, expenses, employee timesheets, a marketing tab to generate creatives, a sales pipeline with opportunity tracking and a complete, organized document management system.',
           tags: ['Next.js', 'TypeScript', 'ERP', 'Finance'],
           image: '/projects/erp-financeiro.png',
+          liveUrl: '#',
+          repoUrl: 'https://github.com/GuiBarbiero',
+        },
+        {
+          title: 'Due Diligence — Champs Law',
+          description:
+            'Internal system for managing client-submitted documents in Due Diligence processes. The platform centralizes the DVR, organizes files by pending review, tracks document status and streamlines legal document analysis in a secure, standardized workflow.',
+          tags: ['Next.js', 'TypeScript', 'Due Diligence', 'Documents'],
+          image: '/projects/DueDilligence.png',
+          liveUrl: '#',
+          repoUrl: 'https://github.com/GuiBarbiero',
+        },
+        {
+          title: 'DealFlow',
+          description:
+            'Hub for companies looking to buy or sell businesses across multiple sectors. The platform connects companies interested in M&A, centralizes opportunities, supports fit analysis and helps organize negotiations and relationship management between parties.',
+          tags: ['TypeScript', 'Supabase', 'Cloudflare', 'Cloudflare R2', 'M&A'],
+          image: '/projects/Dealflow.png',
+          liveUrl: '#',
+          repoUrl: 'https://github.com/GuiBarbiero',
+        },
+        {
+          title: 'MyPAI',
+          description:
+            'System responsible for drafting and updating corporate bylaws with AI support, including legal validation in Brazil. The solution helps reduce errors, speed up document generation and make the process more reliable for businesses and partnerships.',
+          tags: ['TypeScript', 'AI', 'Supabase', 'Cloudflare', 'Legal'],
+          image: '/projects/MypAi.png',
+          liveUrl: '#',
+          repoUrl: 'https://github.com/GuiBarbiero',
+        },
+        {
+          title: 'MyPAI Website',
+          description:
+            'Institutional and commercial website for the MyPAI product, designed to present the value of the solution, communicate the advantage of AI applied to corporate law and convert leads with a clear value proposition for businesses and professionals needing to validate and update legal documents.',
+          tags: ['Next.js', 'TypeScript', 'Marketing', 'Landing Page', 'AI'],
+          image: '/projects/MypAiWebsite.png',
           liveUrl: '#',
           repoUrl: 'https://github.com/GuiBarbiero',
         },

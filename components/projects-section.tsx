@@ -103,14 +103,7 @@ export function ProjectsSection() {
                   ))}
                 </div>
 
-                <div className="mt-6 flex items-center gap-4 border-t border-border pt-4">
-                  <a
-                    href={project.liveUrl}
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground transition-colors hover:text-primary"
-                  >
-                    {t.projects.live}
-                    <ArrowUpRight className="size-4" />
-                  </a>
+                <div className="mt-6 flex items-center justify-end border-t border-border pt-4">
                   <a
                     href={project.repoUrl}
                     className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
