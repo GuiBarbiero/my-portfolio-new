@@ -25,7 +25,7 @@ export function ContactSection() {
       icon: InstagramIcon,
       label: 'Instagram',
       handle: '@GuiBarbiero',
-      href: 'https://instagram.com/GuiBarbiero',
+      href: 'https://www.instagram.com/gui.barbiero/',
     },
     {
       icon: GithubIcon,

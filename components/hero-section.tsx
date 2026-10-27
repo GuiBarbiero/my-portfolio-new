@@ -113,7 +113,7 @@ export function HeroSection() {
               },
               {
                 icon: InstagramIcon,
-                href: 'https://instagram.com/GuiBarbiero',
+                href: 'https://www.instagram.com/gui.barbiero/',
                 label: 'Instagram',
               },
               {
